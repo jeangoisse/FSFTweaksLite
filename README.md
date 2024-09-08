@@ -12,7 +12,7 @@ If you want a tweak from FSF Collection which isn't included here, you can ask m
 
 LIST OF TWEAKS INCLUDED
 
-- Encounter Map Tweaks generates ancient danger & mineable ressources
+- Encounter maps generates ancient danger & mineable ressources
 - Herd Migration on any biomes
 - Ideology better mining worksites
 - Ideology art production specialist 
