@@ -26,6 +26,8 @@ LIST OF TWEAKS INCLUDED
 - Randy Random incident Fixes
 - Tidy crops textures
 
+The reasoning behind not include some of the tweaks are : some mods do it better and Tweaks Galore from Neurotix can act as a replacement for them.
+
 As always this will not be put on the workshop.
 
 important note : Ideology is a **hard requirement** since I was too lazy to set up load folders for it.
