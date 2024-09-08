@@ -9,8 +9,13 @@
 		<li>1.4</li>
 		<li>1.5</li>
 	</supportedVersions>
-	<description>A list of personal tweaks for Rimworld</description>
-
+	<description>A list of personal tweaks for Rimworld, XML Extension dependancy shrinked.</description>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Ideology</packageId>
+			<displayName>Ideology</displayName>
+		</li>
+	</modDependencies>
 	<loadAfter>
 		<li>Aelanna.EccentricTech.Flares2</li>
 		<li>Aranmaho.BetterDarkness</li>
