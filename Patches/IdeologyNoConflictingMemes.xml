@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			
+		<!-- No Conflicting Memes -->
+			
+		<li Class="PatchOperationRemove">
+			<xpath>/Defs/MemeDef/exclusionTags</xpath>
+		</li>
+			
+		<li Class="PatchOperationRemove">
+			<xpath>/Defs/PreceptDef/conflictingMemes</xpath>
+		</li>
+			
+		<!-- No Required Precepts -->
+			
+		<li Class="PatchOperationRemove">
+			<xpath>/Defs/PreceptDef [not(@ParentName) = "PreceptRoleSingleBase" or not(@ParentName) = "PreceptRoleMultiBase"] /requiredMemes</xpath>
+		</li>
+			
+		</operations>
+	</Operation>	
+</Patch>	

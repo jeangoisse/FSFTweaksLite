@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+
+	<!-- Remove all entries then add them -->
+			
+            <li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[plant]/plant/blockAdjacentSow</xpath>
+            </li>
+			
+            <li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[plant]/plant/interferesWithRoof</xpath>
+            </li>
+			
+            <li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[plant]/plant/mustBeWildToSow</xpath>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[plant]/plant</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+						<interferesWithRoof>false</interferesWithRoof>
+						<mustBeWildToSow>false</mustBeWildToSow>
+					</value>
+			</li>
+		
+	<!-- Time to Plant
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "TreeBase"]/plant/sowWork</xpath>
+					<value>
+						<sowWork>4000</sowWork>
+					</value>
+			</li>
+
+	-->
+			
+		</operations>
+	</Operation>
+
+</Patch>

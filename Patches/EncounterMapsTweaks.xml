@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>				
+		<!-- Encounter Map Ancient Dangers -->
+		
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MapGeneratorDef[defName = "Encounter"]/genSteps</xpath>
+			<value>
+				<li>ScatterShrines</li>
+			</value>
+	</Operation>
+
+		<!-- Ressources on Encounter Maps -->
+			
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/MapGeneratorDef[defName = "Encounter"]/genSteps/li[text()="RocksFromGrid_NoMinerals"]</xpath>
+		<value>
+			<li>RocksFromGrid</li>
+		</value>
+	</Operation>	
+</Patch>

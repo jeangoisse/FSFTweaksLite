@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			
+		<!-- Quest Reward Pawn Bios -->
+			
+		<!-- Core -->
+	
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/QuestScriptDef/root/nodes/li/rewardDetailsHidden</xpath>
+			<value>
+				<rewardDetailsHidden>false</rewardDetailsHidden>
+			</value>
+		</li>			
+		</operations>
+	</Operation>	
+</Patch>
